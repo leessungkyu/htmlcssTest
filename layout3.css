@@ -1,0 +1,33 @@
+.divstyle {
+  background-color: yellowgreen; 
+  width:250px; 
+  height: 250px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.divleft {
+  background-color: green; 
+  width:50%;
+  height:200px;
+  float: left;
+}
+
+.divright {
+  background-color: grey; 
+  width: 50%;
+  height:200px;
+  float: left;
+  /* float속성은  */
+}
+
+.divtt {
+  background-color: red; 
+  /* float속성 아래에 있는 div는 깔리게 되어 
+     div스타일이 보이지 않게됨
+     <div style="clear:both;"></div>를 
+     추가하여 스타일을 초기화 해주어야 보인다.
+  */
+  height:100px;  
+}
