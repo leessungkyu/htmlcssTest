@@ -1,0 +1,28 @@
+div{
+  border: 1px solid yellowgreen;
+  width: 250px;
+}
+
+.div2{
+  float:left;
+}
+
+.div3{
+  float:left;
+}
+
+.div4 ul{
+  /* 리스트 기호를 변경 */
+  list-style-type: square;
+}
+
+.div4 ol{
+  list-style-type: upper-roman;
+}
+
+.nav li{
+  /* 기본적으로 ul은 display block처리 되어 있음 */
+  display:inline-block;
+  width: 60px;
+  font-size: 10px;
+}
