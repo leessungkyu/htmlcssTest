@@ -20,9 +20,46 @@ div{
   list-style-type: upper-roman;
 }
 
+.nav {
+  background-color: purple;
+}
+
 .nav li{
   /* 기본적으로 ul은 display block처리 되어 있음 */
   display:inline-block;
-  width: 60px;
-  font-size: 10px;
+  width:25px;
+  font-size: 8px;
+  text-align: center;
+  /*border: 1px dotted red;*/
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 6px;
+  /*아래 속성을 적용이 안된다 a태그는 기본 속성 자체를 변경해줘야 한다.*/
+  text-decoration: none;
+  color:blue;
+}
+
+/*자체 속성으로 변경을 하고 싶으면
+  visited: a태크를 눌렀을때
+  hover:마우스 올려놓았을때
+  active:실행시켰을때
+*/
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus
+{
+   text-decoration: none;
+   color: blue;
+   font-size:10px;
+}
+
+.target{
+  width: 400px;
+  background-color: grey;
+  position: relative;
+  top:-50px;
+  right: -150px;
 }
