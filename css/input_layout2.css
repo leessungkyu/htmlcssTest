@@ -1,0 +1,76 @@
+@media (min-width: 500px) {
+	body {
+		background: gold;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		background: red;
+	}
+}
+
+body{
+  margin:0; 
+}
+
+div, textarea, input{
+  box-sizing: border-box ;
+}
+
+.VOC_MAIN{
+  width: 80%;
+  margin:auto;
+  border: 2px solid red;
+  background: burlywood;
+  min-width: 500px;
+}
+
+.voc_title{
+  border-radius: 15px 15px 15px 0; 
+  padding: 0.5em 0.6em; 
+  color: black;
+  font-weight: bold;
+}
+
+.voc_top label{
+  display:inline-flex;
+  border: 2px solid blue;
+  width: 50px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.voc_subject input{
+  padding:5px;
+  border-radius: 5px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 1000px;
+}
+
+
+.voc_idpw input{
+  padding:5px;
+  border-radius: 5px;
+  width: 40%;
+  min-width: 80px;
+  max-width: 200px;
+}
+
+.voc_content textarea{
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+}
+
+.voc_content {
+  border-radius: 15px 15px 15px 0; 
+  padding: 0.5em 0.6em; 
+  color: black;
+  font-weight: bold;
+}
+
+.voc_bottom input{
+   float:right;
+}

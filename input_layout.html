@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input Sample</title>
+  <!--  .한번은 현재 위치/ ..은 현재위치의 이전 값 -->
+  <link rel="stylesheet" href="./css/input_layout.css">
+</head>
+<body>
+    <div class="component-signup">
+      <form>
+        <div>
+          <p>아이디</p>
+          <input type="text" placeholder="example@example.com">
+        </div>        
+        <div>
+          <p>비밀번호</p>
+          <input type="password">
+        </div>        
+        <div id="width-40">
+          <p>이름</p>
+          <input type="text">
+        </div>
+        <div id="width-40">
+          <p>생년월일</p>
+          <input type="date">
+        </div>
+        <div class="clear-both"></div>
+        <div>
+          <p>간단한 자기소계</p>
+          <textarea></textarea>
+        </div>
+        <br>
+        <div>
+          <label for="chk1">※ 비매너시 경고없이 강퇴합니다.</label>
+          <input type="checkbox" id="chk1">
+          <br><br>
+          <input type="submit" value="회원가입">
+        </div>
+      </form>
+    </div>
+</body>
+</html>

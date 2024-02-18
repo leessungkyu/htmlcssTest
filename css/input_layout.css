@@ -1,0 +1,54 @@
+body{
+  margin:0;
+  background:black;
+}
+
+div, input, textarea{
+  box-sizing: border-box;
+}
+
+.component-signup{
+  background-color: white;
+  width: 80%;
+  max-width: 600px;
+  min-width: 400px;
+  margin: auto;
+  border: 2px dashed yellowgreen;
+  padding: 30px;
+}
+
+.component-signup input,textarea{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid purple;
+  border-radius: 15px;;
+}
+
+.component-signup input[type=submit]{
+  /* 만약 적용을  무조건해야한다면 !important를 삽입 */
+  width: 200px !important;
+  background-color: orange;
+  border: 2px solid darkgoldenrod
+}
+
+.component-signup input[type=submit]:hover,
+.component-signup input[type=submit]:active,
+.component-signup input[type=submit]:focus{
+  background-color: yellowgreen;
+  border: 2px solid yellow;
+}
+
+.component-signup input[type=checkbox]{
+  width: 20px;
+}
+/*id는 #을사용*/
+#width-40{
+  width: 40%;
+  float:left;
+  margin-right: 30px;
+}
+
+.clear-both{
+  clear:both;
+}
