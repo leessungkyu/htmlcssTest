@@ -1,6 +1,10 @@
-div{
+body{
+  margin:0;
+}
+div, textarea{
   border: 1px solid yellowgreen;
-  width: 250px;
+ /* width: 250px;*/
+  box-sizing:border-box;      
 }
 
 .div2{
@@ -62,4 +66,34 @@ a:focus
   position: relative;
   top:-50px;
   right: -150px;
+}
+
+.input-class
+{
+  width: 200px;
+}
+
+.input-class input{  
+  /* 자체 패딩이 있어 크기를 맞추기 위해서는 아래 코드 추가 필요*/
+  box-sizing:border-box;
+}
+
+.input-class input[type=text],
+.input-class input[type=number]{
+  width:100%;
+  font-size: 20px;
+}
+
+.input-class input[type=text]:hover{
+  padding: 10px;
+  border-radius: 15px;
+  border:1px solid purple;
+}
+
+.my-table{
+  border-collapse: collapse;
+}
+.my-table tr td{
+  border: 1px solid green;
+  width:50px;
 }

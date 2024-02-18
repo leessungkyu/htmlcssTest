@@ -69,6 +69,7 @@ a {
     absolute(realative인 부모를 기준으로 이동)
 */
 .image-button {
+  color: aquamarine;
   background: none;
   position: relative;
   left: 50%;
