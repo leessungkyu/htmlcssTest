@@ -1,0 +1,24 @@
+.top2_1{
+    float:left;
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.top2_1 a span{
+  color: white;  
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.top2_2{
+    float:left;
+    width: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+

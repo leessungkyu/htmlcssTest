@@ -1,0 +1,21 @@
+.top3{
+    background-color: #1E3932;
+    height: 300px;
+}
+.top3_1{
+    background: none;
+    float: left;
+}
+
+.top3_1 img{
+    padding: 30px 30px 0px 40px;
+}
+
+.top3_2{
+    background: none;
+    float:left;
+}
+
+.top3_2{
+    color:white;
+}

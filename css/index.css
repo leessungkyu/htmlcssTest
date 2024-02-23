@@ -7,8 +7,8 @@
   display:block;
   margin-right: auto;
   margin-left: auto;  
-  width: 70%;
-  border: 1px solid black;
+  width: 80%;
+  border: 1px solid black;  
 }
 .menu{
   background-color: aqua;
@@ -18,7 +18,7 @@
   border: 1px solid black;
   float:left;
   height: 100%;
-  width: 150px;
+  width: 100px;
 }
 .logo-img{
   width:100%;
@@ -28,6 +28,7 @@
 .nav-menu{
   float:left;
   font-size:15px;
+  border: 2px solid red;
 }
 
 .nav-up{
