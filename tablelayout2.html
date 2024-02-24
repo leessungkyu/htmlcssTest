@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .cart{
+        width: 80%;
+        margin: auto;
+      }
+      .top_header{
+        width: 100%;
+        height: 50px;
+        
+      }
+      .top_header1{
+        float: left;
+        border: 1px solid black;
+        width:50px;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      .top_header1 a{
+        text-decoration: none;
+        color: black;
+      }
+      .top_header2{
+        float: left;
+        border: 1px solid black;
+        width: 60%;
+        height: 100%;
+      }     
+      
+      .cart-table{
+        float: left;
+        border: 1px solid black;
+      }
+
+      .cart-table table{
+        width: 300px;
+        border-collapse: collapse;
+      }
+
+      .cart-table td{
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      .cart-table img{
+        width: 100px;
+      }
+      .cart-space{
+        float: left;
+      /* border: 1px solid black;*/
+        width: 20px;
+        height: 100px;
+      }
+      .cart-amttable{
+        float:left;
+        border: 1px solid black;
+        text-align: center;
+      } 
+
+      .cart-amttable table{
+        border-collapse: collapse;
+      }
+      .cart-amttable td{
+        border: 1px solid black;
+        height: 10px;
+        width: 200px;
+      }
+
+      .cart-amttable button{
+        width: 150px;
+        background-color: aquamarine;
+      } 
+
+      .cart-amttable button:active{
+        background-color: bisque;
+      }
+
+      .w-200{
+        width: 200px;
+      }
+  </style>
+</head>
+<body>
+  <!-- 장바구니 -->
+  <div class="cart">
+    <div class="top-header">
+      <div class="top_header1">
+        <a href="#"> < </a>
+      </div>
+      <div class="top_header2">
+      <h3>장바구니</h3>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+ 
+      <div class="cart-table">
+          <table>
+            <tr>
+              <td rowspan="4"><input type="checkbox"></td>
+              <td rowspan="4"><img src="./sample.PNG" alt="..."></td>
+              <td class="w-200">제목</td>
+            </tr>
+            <tr>
+              <td class="w-200">특이사항</td>
+            </tr>
+            <tr>
+              <td class="w-200">가격</td>
+            </tr>
+            <tr>
+              <td class="w-200">적립금</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                수량
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">11</td>
+            </tr>
+          </table>
+      </div>
+      <div class="cart-space"></div>
+      <div class="cart-amttable">
+        <table>
+          <tr> 
+              <td>제목</td>
+          </tr>
+          <tr> 
+              <td>총주문가격</td>
+          </tr>
+          <tr> 
+              <td>총할인가격</td>
+          </tr>
+          <tr> 
+              <td>총배송비</td>
+          </tr>
+          <tr> 
+              <td>총결재비</td>
+          </tr>
+          <tr> 
+              <td>
+                <button onclick="alert('1')">구매하기</button>
+              </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+</body>
+</html>

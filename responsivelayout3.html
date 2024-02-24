@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin:0;
+    }
+    .my-flex{
+      display: flex;
+      height: 50vh; /*50vh는 내가 보는 화면의 50%*/
+      flex-wrap: wrap; /*안쪽에서 내 크기를 초과하면 밑으로 떨어지게*/
+      align-items: center;  /*flex중앙정렬*/
+      justify-content: center;  /*flex중앙정렬*/      
+    }
+
+    .img-box{
+      width: 50%;
+      height: 500px;
+      background-image: url(./sample.PNG);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      border: 1px solid black;
+      background-size: 100% 100%;
+      box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .img-box{
+        width:50%;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .img-box{
+        width:100%;
+      }      
+    }
+  </style>
+</head>
+<body>
+  <!--  DIV백그라운드 이미지: 웹에서는 1라인에 2개씩, 모바일에서는 한라인에 1개씩  -->
+  <div class="my-flex">
+    <div class="img-box">
+          
+    </div>
+    <div class="img-box">
+          
+    </div>
+  </div>
+</body>
+</html>

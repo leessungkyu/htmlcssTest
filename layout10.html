@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>복습</title>
+  <style>
+
+    .my-nav li{
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+    }
+
+    .my-nav a,
+    .my-nav a:link,
+    .my-nav a:visited,
+    .my-nav a:hover,
+    .my-nav a:active,
+    .my-nav a:focus
+    {
+      text-decoration: none;
+      color: black;
+      
+    }
+
+    .my-table{
+      /* td 간격 없앰 */
+      border-collapse: collapse;
+    }
+
+    .my-table td{
+      border: 1px solid black;  
+      width: 100px;
+      text-align: center;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 네비게이션바 -->
+  <div clas="top-header">
+    <ul class="my-nav">
+        <li><a href="#">first</a></li>
+        <li><a href="#">second</a></li>
+        <li><a href="#">third</a></li>
+        <li><a href="#">fourth</a></li>
+    </ul>
+  </div>
+
+  <!-- 표만들기 -->
+  <div class="component-table">
+    <table class="my-table">
+      <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td colspan="2">1</td>
+        <td>3</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

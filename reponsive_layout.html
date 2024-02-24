@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형 예제</title>
+  <style>
+    .test-responsive-web{
+      font-size: 30px;
+      background-color: lightgray;
+    }
+
+    /* 화면크기가 줄어들면 폰트사이즈를 변경한다 */
+    /* css는 밑에 있는 코드가 적용되는법칙: medial query는 밑에 위치해야함 */
+    @media  screen and (max-width: 1200px) {
+      /* 1200px 이하일때 적용될 style(태블릿)  */
+      .test-responsive-web{
+         font-size: 20px;
+         background-color: purple;
+      }
+    }
+
+    @media screen and (max-width:768px) {
+      /* 모바일 - 화면이 768px이하일때 적용 style(모바일) */
+      .test-responsive-web{
+        font-size: 10px;
+        background-color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 반응형: 웹크기에 따라 UI가 바뀜 -->
+  <div class="test-responsive-web">
+      <p>Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello </p>
+  </div>
+</body>
+</html>

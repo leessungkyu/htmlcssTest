@@ -1,5 +1,8 @@
+.top2 {
+  display: flex;
+  justify-content: space-between; /* 아이템 사이에 동일한 간격을 추가 */
+}
 .top2_1{
-    float:left;
     width: 50%;
     height: 50px;
     border: 1px solid black;
@@ -8,15 +11,21 @@
     color: white;
 }
 
-.top2_1 a span{
+.top2_1 a{
   color: white;  
   border: 2px solid white;
-  border-radius: 10px;
-  font-size: 15px;
+  border-radius: 50%; /* 테두리를 반지름의 절반으로 설정하여 동그라미 모양으로 만듭니다. */
+  width: 30px; /* 링크의 너비와 높이를 조정할 수 있습니다. */
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;   
+  margin: 0;
 }
 
+
 .top2_2{
-    float:left;
     width: 50%;
     border: 1px solid black;
     box-sizing: border-box;

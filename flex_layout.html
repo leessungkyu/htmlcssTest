@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .my-box{
+      width:800px;
+      height:200px;
+      border: 1px solid black;
+
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; 
+       /*flex-wrap: wrap;    크기가 초과하면 밑으로 떨어트림*/
+    }
+
+    .my-box div{
+      width: 100px;
+      background-color: plum;
+    }
+  </style>
+
+
+
+</head>
+<body>
+  <!-- 
+    div 속성 display:flex; 
+    가로배치 사용시 많이 사용함
+    방향지시
+    flex-direction: row;(기본값 row, 변경값 column)
+    row단으로 세로정렬, column단으로 정렬
+    align-items: center; 교차축으로 정렬(row면 세로정렬, column이면 가로정렬)
+    justify-content: cneter; (flex-direction방향으로 정렬[cneter,flex-end, flex-start])
+    flex-wrap: wrap;  (기본값은 크기를 초과해도 최대한 맞춤, wrap: 크기 초과하면 밑으로 떨어짐)
+    flex-grow: 1;  (차지하는 비율을 자식에게 할당, 안주면 0)
+    flex-grow: 2; (위에서 div크기를 100px으로 하여 2로 설정하면 200px로 되고 설정안된 아이들은 1줄에 맞게 크기조정함)
+  -->
+
+  <div class="my-box">
+    <div style="flex-grow: 3;">first</div>
+    <div>second</div>
+    <div>third</div>
+    <div>fourth</div>
+  </div>
+
+</body>
+</html>
