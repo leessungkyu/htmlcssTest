@@ -9,8 +9,12 @@
     box-sizing: border-box;
     background-color: black;
     color: white;
+    display: flex;
 }
 
+.top2_1 span{
+  line-height: 50px;
+}
 .top2_1 a{
   color: white;  
   border: 2px solid white;
@@ -21,7 +25,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;   
-  margin: 0;
+  padding: 3px;
 }
 
 
