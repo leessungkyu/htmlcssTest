@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Html</title>
+  <style>
+    .box{
+      position: relative;
+      background-color: yellowgreen;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+    }
+
+    .box:hover{
+      background-color: green;
+    }
+    
+    .text{
+      position:absolute; /* relative인 부모를 기준위치로 힘*/
+     /*  left: 30%; relative인 부모 기준 30% 오른쪽으로 이동 */
+      top:80%;
+      margin:0;
+      opacity: 0; /* 투명도 0 ~ 1까지  */
+      transition: all 0.5s;  /* 모든 변화효과 1초 걸리게 Delay */
+    }
+    .box:hover .text{
+      opacity: 1;
+      top:40%;
+    }    
+  </style>
+</head>
+<body>
+  <div class="box">
+    Hello World!
+    <p class="text ">Nice to Meet you</p>
+  </div>
+</body>
+</html>

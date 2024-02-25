@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Example</title>
+  <style>
+    .box{
+      background-color: purple;
+      width: 300px;
+      transition: background 1s ease, color 2s ease;
+    }
+
+    .box:hover{
+      background-color: violet;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!--
+  <p style="transform: rotate(30deg); width: 100px;">안녕</p>
+  -->
+  <!-- 마우스를 올리면 1초 동안 violet이 되고 글자색은 하얀색으로 변경 -->
+  <div class="box">
+    <span>마우스를 올리면 색이 바뀜</span>
+  </div>
+</body>
+</html>

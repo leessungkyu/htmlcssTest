@@ -1,6 +1,6 @@
 .top3{
     background-color: #1E3932;
-    height: 300px;
+    height: 400px;
 }
 .top3_1{
     background: none;
@@ -18,4 +18,31 @@
 
 .top3_2{
     color:white;
+}
+
+.top3_btn_singup{
+    border-radius: 5px;
+    background-color: green;
+    width: 150px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+}
+
+.top3_btn_login{
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    width: 150px;
+    padding: 8px 15px 8px 15px;
+}
+
+.top3_btn_gift{
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 15px 8px 15px;
+}
+
+.font_B{
+    font-weight: bold;
 }

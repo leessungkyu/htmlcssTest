@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Header</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    body{
+      margin:0;
+    }
+    .section-header{
+      width: 100%;
+      background-color: rgb(246, 245, 236);
+      height: 120px;
+    }
+
+    .inner-header{
+      width: 1100px;
+      height: 100%;
+      border: 1px solid black;
+      margin: auto;
+      padding-left:10px;
+
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .log{
+      width: 75px;
+      height:75px;
+    }
+
+    .log img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .space-nav{
+      font-size: 13px;
+    } 
+    .space-nav li{
+      display: inline-block;
+    }
+
+    .top-nav{
+      height: 45px;
+
+      display: flex;
+      justify-content: flex-end;
+    }
+    .top-nav a{
+      color: #555555;
+      text-decoration: none;      
+      border-right: 1px solid lightgrey;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .top-nav button{
+      border-radius: 5px;
+      background-color: white;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding:5px;
+    }
+    .top-nav a:hover{
+      text-decoration: underline;
+    }    
+    .bottom-nav{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .bottom-nav a{
+      color: #555555;
+      text-decoration: none;      
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .bottom-nav a:hover{
+      text-decoration: underline;
+      color: greenyellow;
+      background-color: black;
+      padding-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="section-header">
+    <div class="inner-header">
+      <div class="logo">
+        <img src="./img/starbucks/starbucks_logo.JPG" alt="...">
+      </div>
+      <div class="space-nav">
+        <div class="top-nav">
+            <ul>
+              <li><a href="#">sign In</a></li>
+              <li><a href="#">My starbucls</a></li>
+              <li><a href="#">Customer Service & ideas</a></li>
+              <li><a href="#">Find a Store</a></li>
+              <li><button onclick="alert('1');"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            </ul>
+        </div>
+        <div class="bottom-nav">
+            <ul>
+              <li><a href="#">COFFEE</a></li>
+              <li><a href="#">MENU</a></li>
+              <li><a href="#">STORE</a></li>
+              <li><a href="#">RESPONSIBILITY</a></li>
+              <li><a href="#">STARBUCKS REWARDS</a></li>
+              <li><a href="#">CORPORATE SALES</a></li>
+              <li><a href="#">WHARTS NEW</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
